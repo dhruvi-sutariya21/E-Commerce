@@ -1,0 +1,62 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --primary: #E91E63;
+    --primary-hover: #D81B60;
+    --secondary: #F8F9FA;
+    --accent: #FFB6C1;
+    --accent-light: #FFF0F3;
+    --card-bg: #FFFFFF;
+    --text-dark: #1F2937;
+    --text-muted: #6B7280;
+  }
+
+  body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--secondary);
+    color: var(--text-dark);
+    margin: 0;
+    padding: 0;
+    min-height: 100vh;
+  }
+
+  h1, h2, h3, .font-serif-luxury {
+    font-family: 'Playfair Display', serif;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+::-webkit-scrollbar-track {
+  background: #F1F1F1;
+}
+::-webkit-scrollbar-thumb {
+  background: #E91E63;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #D81B60;
+}
+
+/* Glassmorphism & Card Shadows */
+.card-shadow {
+  box-shadow: 0 10px 30px -10px rgba(233, 30, 99, 0.08), 0 4px 12px rgba(0, 0, 0, 0.03);
+}
+
+.card-shadow-hover {
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.card-shadow-hover:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 20px 40px -15px rgba(233, 30, 99, 0.15), 0 8px 24px rgba(0, 0, 0, 0.06);
+}
+
+.glass-header {
+  background: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+}

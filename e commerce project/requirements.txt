@@ -1,0 +1,10 @@
+fastapi
+alembic
+SQLAlchemy
+uvicorn
+pydantic
+python-dotenv
+bcrypt
+passlib
+loguru
+
